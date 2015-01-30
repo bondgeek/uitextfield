@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r2P-ft-AMd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="zxi-jD-QPv">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="uitextfield" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r2P-ft-AMd" customClass="ViewController" customModule="uitextfield" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="Dt0-EQ-TrX"/>
+                        <viewControllerLayoutGuide type="bottom" id="T3d-s2-Z5g"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="j5I-aW-AkI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="text field one" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-aL-3Gn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple UITextField" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W4-eV-uOt">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="55" width="368" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Text Field One Text Goes Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQN-JR-GxB">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="113" width="368" height="30"/>
+                                </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Styling UITextField" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-gi-Xrn">
-                                <rect key="frame" x="16" y="28" width="568" height="21"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="my Text Field" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xlh-nR-KEx" customClass="myTextField" customModule="uitextfield" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="186" width="368" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="XAK-aL-3Gn" firstAttribute="leading" secondItem="lEI-gi-Xrn" secondAttribute="leading" id="Dgo-9M-V3Q"/>
-                            <constraint firstItem="XAK-aL-3Gn" firstAttribute="top" secondItem="lEI-gi-Xrn" secondAttribute="bottom" constant="8" symbolic="YES" id="KUC-cL-9FP"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XAK-aL-3Gn" secondAttribute="bottom" constant="681" id="Rg5-sS-9Tn"/>
-                            <constraint firstItem="XAK-aL-3Gn" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="l64-1I-Fut"/>
-                            <constraint firstItem="lEI-gi-Xrn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="oxm-42-vjY"/>
-                            <constraint firstItem="XAK-aL-3Gn" firstAttribute="trailing" secondItem="lEI-gi-Xrn" secondAttribute="trailing" id="v0q-KW-5NL"/>
-                            <constraint firstItem="XAK-aL-3Gn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="whI-m3-kFH"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="XAK-aL-3Gn"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="oxm-42-vjY"/>
-                                <exclude reference="Dgo-9M-V3Q"/>
-                                <exclude reference="KUC-cL-9FP"/>
-                                <exclude reference="l64-1I-Fut"/>
-                                <exclude reference="v0q-KW-5NL"/>
-                                <exclude reference="whI-m3-kFH"/>
-                                <exclude reference="Rg5-sS-9Tn"/>
+                                <exclude reference="4W4-eV-uOt"/>
+                                <exclude reference="MQN-JR-GxB"/>
+                                <exclude reference="Xlh-nR-KEx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="XAK-aL-3Gn"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="oxm-42-vjY"/>
-                                <include reference="Dgo-9M-V3Q"/>
-                                <include reference="KUC-cL-9FP"/>
-                                <include reference="l64-1I-Fut"/>
-                                <include reference="v0q-KW-5NL"/>
-                                <include reference="whI-m3-kFH"/>
-                                <include reference="Rg5-sS-9Tn"/>
+                                <include reference="4W4-eV-uOt"/>
+                                <include reference="MQN-JR-GxB"/>
+                                <include reference="Xlh-nR-KEx"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textFieldOne" destination="MQN-JR-GxB" id="uJb-8X-5wn"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TI5-9G-esw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160.5" y="137.25"/>
+            <point key="canvasLocation" x="348" y="397.5"/>
         </scene>
     </scenes>
 </document>
