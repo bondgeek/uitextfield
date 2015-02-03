@@ -10,7 +10,12 @@ import UIKit
 
 @IBDesignable class myTextField: UITextField {
     var border = CALayer()
-    var bottomBorderWidth: CGFloat = 2.0
+    
+    @IBInspectable var bottomBorderWidth: CGFloat = 2.0 {
+        didSet {
+            border.borderWidth = bottomBorderWidth
+        }
+    }
     
     @IBInspectable var borderColor: UIColor = UIColor.lightGrayColor() {
         didSet {
@@ -29,7 +34,6 @@ import UIKit
         
         self.borderStyle = UITextBorderStyle.None
         
-        border.borderWidth = bottomBorderWidth
         border.frame = CGRect(
             x: 0,
             y: self.frame.size.height - self.bottomBorderWidth,
